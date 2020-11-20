@@ -3,7 +3,7 @@ import requests
 
 
 def translate(query):
-    sign_function = js2py.eval_js(open("get_sign.js").read())
+    sign_function = js2py.eval_js(open("requests_js2py_scrape_baidu_translate/get_sign.js").read())
     url = "https://fanyi.baidu.com/basetrans"
     headers = {
         "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1",

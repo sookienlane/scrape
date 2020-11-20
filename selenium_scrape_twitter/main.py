@@ -177,9 +177,9 @@ def main():
         os.system("/root/anaconda3/bin/you-get {}".format(x))
 
     ###
-    driver = webdriver.Remote(
-        "http://{}:{}@hub.browserstack.com:80/wd/hub".format(BROWERSTACK_USERNAME, BROWERSTACK_PASSWORD))
-    # driver = webdriver.Chrome("/Users/frank/Documents/chromedriver")
+    # driver = webdriver.Remote(
+    #     "http://{}:{}@hub.browserstack.com:80/wd/hub".format(BROWERSTACK_USERNAME, BROWERSTACK_PASSWORD))
+    driver = webdriver.Chrome("/Users/frank/Documents/chromedriver")
     driver.set_window_size(600, 600)
 
     time.sleep(1)
